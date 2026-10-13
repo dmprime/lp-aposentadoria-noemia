@@ -1,0 +1,623 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Noemia Ingrácio · Aposentadoria</title>
+<meta name="description" content="Advocacia previdenciária em Curitiba desde 2006. Análise do seu histórico de contribuição para pedir a aposentadoria pela regra mais adequada: idade, tempo de contribuição, PcD ou especial.">
+<link rel="preload" as="image" href="img/equipe-800.webp" imagesrcset="img/equipe-480.webp 480w, img/equipe-800.webp 800w, img/equipe-1120.webp 1120w" imagesizes="(max-width: 860px) calc(100vw - 32px), 430px" type="image/webp" fetchpriority="high">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Figtree:wght@400;500;600;700&display=swap">
+<!-- Google Tag Manager / Google Ads: inserir o snippet aqui -->
+<style>
+/* Layout: faixa verde-escura de autoridade no topo, corpo claro em colunas largas, dourado só em detalhes e na prova social */
+:root {
+  --green-900: #12302a;
+  --green-800: #1b4036;
+  --green-700: #24543f;
+  --green-100: #e3ebe5;
+  --gold: #b48a3c;
+  --gold-soft: #e9dcc0;
+  --paper: #f4f6f3;
+  --white: #ffffff;
+  --ink: #17221e;
+  --muted: #55625c;
+  --line: #d6ddd7;
+  --cta: #1f7a4d;
+  --cta-hover: #19663f;
+  --f-display: "Newsreader", "Georgia", "Times New Roman", serif;
+  --f-body: "Figtree", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --wrap: 1120px;
+  --gutter: clamp(16px, 4vw, 32px);
+  color-scheme: light;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--f-body); font-size: 17px; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+img { max-width: 100%; height: auto; display: block; }
+picture { display: block; }
+figure { margin: 0; }
+a { color: inherit; }
+h1, h2, h3 { font-family: var(--f-display); font-weight: 500; line-height: 1.15; text-wrap: balance; margin: 0; letter-spacing: -0.01em; }
+p { margin: 0; }
+.wrap { max-width: var(--wrap); margin-inline: auto; padding-inline: var(--gutter); }
+section { padding-block: clamp(56px, 8vw, 96px); }
+.eyebrow { font-size: 13px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); }
+.section-head { display: grid; gap: 14px; max-width: 680px; margin-bottom: clamp(32px, 5vw, 48px); }
+.section-head h2 { font-size: clamp(30px, 4.2vw, 44px); }
+.section-head p { color: var(--muted); font-size: 18px; }
+
+/* Botões */
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 52px; padding: 14px 26px; border-radius: 6px; font-weight: 600; font-size: 16px; text-decoration: none; transition: background .15s ease, transform .15s ease; cursor: pointer; border: 0; }
+.btn svg { width: 20px; height: 20px; flex: none; }
+.btn-primary { background: var(--cta); color: #fff; }
+.btn-primary:hover { background: var(--cta-hover); transform: translateY(-1px); }
+.btn-ghost { background: transparent; color: var(--green-800); border: 1.5px solid var(--green-800); }
+.btn-ghost:hover { background: var(--green-100); }
+.btn:focus-visible, a:focus-visible, summary:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+.cta-note { font-size: 14px; color: var(--muted); }
+
+/* Header */
+/* Cabeçalho fixo: logo grande no topo da página, reduzido ao rolar (classe .is-scrolled via JS) */
+:root { --logo-top: 72px; --logo-scrolled: 44px; --head-top: calc(var(--logo-top) + 20px); }
+@media (min-width: 861px) { :root { --logo-top: 104px; --head-top: calc(var(--logo-top) + 28px); } }
+.topbar { position: fixed; inset: 0 0 auto; z-index: 20; padding-top: env(safe-area-inset-top, 0px); background: var(--green-900); color: #fff; transition: box-shadow .2s ease; }
+.topbar.is-scrolled { box-shadow: 0 4px 16px rgba(0, 0, 0, .18); }
+.topbar .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 64px; }
+.brand { display: flex; align-items: center; gap: 12px; text-decoration: none; color: #fff; min-width: 0; }
+.brand-logo { display: block; height: var(--logo-top); width: auto; margin-block: 10px; transition: height .25s ease, margin .25s ease; }
+.topbar.is-scrolled .brand-logo { height: var(--logo-scrolled); margin-block: 8px; }
+.brand-oab { font-size: 12px; letter-spacing: 0.08em; color: var(--gold-soft); white-space: nowrap; }
+@media (prefers-reduced-motion: reduce) { .brand-logo { transition: none; } }
+.topbar .btn { min-height: 42px; padding: 10px 18px; font-size: 15px; }
+@media (max-width: 560px) { .topbar .btn span { display: none; } .topbar .btn { padding: 10px 12px; } }
+
+/* Hero */
+.hero { background: var(--green-900); color: #fff; padding-block: calc(env(safe-area-inset-top, 0px) + var(--head-top) + clamp(24px, 4vw, 48px)) 0; overflow: hidden; }
+.hero-grid { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: clamp(28px, 5vw, 64px); align-items: end; }
+.hero-copy { display: grid; gap: 22px; padding-bottom: clamp(40px, 6vw, 72px); min-width: 0; }
+.hero .eyebrow { color: var(--gold-soft); }
+.hero .eyebrow .sep { opacity: .55; margin-inline: 6px; }
+.hero h1 { font-size: clamp(36px, 5.4vw, 60px); }
+.hero h1 em { font-style: italic; color: var(--gold-soft); }
+.hero-sub { font-size: clamp(17px, 1.8vw, 20px); color: #cfdcd5; max-width: 560px; }
+.hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 20px; }
+.hero .cta-note { color: #a9bdb3; }
+.hero-photo { position: relative; align-self: end; min-width: 0; }
+.hero-photo img { width: 100%; aspect-ratio: 4 / 4.3; object-fit: cover; object-position: center 20%; border-radius: 8px 8px 0 0; }
+.hero-photo figcaption { position: absolute; left: 14px; bottom: 14px; background: rgba(18, 48, 42, .88); color: #e8efe9; font-size: 13px; padding: 8px 12px; border-radius: 4px; }
+@media (max-width: 860px) {
+  .hero-grid { grid-template-columns: 1fr; }
+  .hero-copy { padding-bottom: 0; }
+  .hero-photo img { aspect-ratio: 4 / 3; border-radius: 8px 8px 0 0; }
+}
+
+/* Faixa de prova */
+.proof { background: var(--white); border-bottom: 1px solid var(--line); padding-block: 0; }
+.proof ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); }
+.proof li { padding: 24px 20px; display: grid; gap: 2px; border-left: 1px solid var(--line); }
+.proof li:first-child { border-left: 0; padding-left: 0; }
+.proof strong { font-family: var(--f-display); font-size: 28px; font-weight: 500; color: var(--green-800); line-height: 1.1; font-variant-numeric: tabular-nums; }
+.proof span { font-size: 14px; color: var(--muted); }
+.stars { color: var(--gold); letter-spacing: 2px; font-size: 15px; }
+@media (max-width: 820px) {
+  .proof ul { grid-template-columns: 1fr 1fr; }
+  .proof li { padding: 18px 14px; }
+  .proof strong { font-size: 22px; }
+  .proof li:nth-child(odd) { border-left: 0; padding-left: 0; }
+  .proof li:nth-child(n+3) { border-top: 1px solid var(--line); }
+}
+
+/* Tipos de aposentadoria */
+.section-cta { margin-top: 32px; display: flex; justify-content: center; }
+.types-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.type { background: var(--white); border: 1px solid var(--line); border-radius: 8px; padding: clamp(24px, 3vw, 32px); display: grid; gap: 14px; align-content: start; min-width: 0; }
+.type-tag { font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
+.type h3 { font-size: clamp(21px, 2.2vw, 24px); color: var(--green-800); }
+.type p { color: var(--ink); }
+.type dl { margin: 0; display: grid; gap: 10px; padding-top: 14px; border-top: 1px solid var(--line); }
+.type dt { font-size: 13px; font-weight: 600; color: var(--green-700); }
+.type dd { margin: 0; font-size: 15.5px; color: var(--muted); }
+.type .link-cta { margin-top: 6px; font-weight: 600; font-size: 15px; color: var(--cta); text-decoration: none; display: inline-flex; align-items: center; gap: 6px; }
+.type .link-cta:hover { text-decoration: underline; }
+@media (max-width: 760px) { .types-grid { grid-template-columns: 1fr; } }
+
+/* Checklist antes de pedir */
+.check { background: var(--green-100); }
+.check-grid { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: clamp(32px, 6vw, 72px); align-items: start; }
+.check .section-head { margin-bottom: 24px; }
+.check-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; background: var(--white); border-radius: 8px; border: 1px solid var(--line); }
+.check-list li { display: grid; grid-template-columns: 28px 1fr; gap: 14px; padding: 22px 24px; border-top: 1px solid var(--line); }
+.check-list li:first-child { border-top: 0; }
+.check-list svg { width: 24px; height: 24px; color: var(--green-700); margin-top: 3px; }
+.check-list h3 { font-family: var(--f-body); font-size: 17px; font-weight: 600; margin-bottom: 4px; }
+.check-list p { color: var(--muted); font-size: 16px; }
+.cnis { margin-top: 8px; font-size: 15px; color: var(--muted); border-left: 2px solid var(--gold); padding-left: 14px; }
+@media (max-width: 860px) { .check-grid { grid-template-columns: 1fr; } }
+
+/* Diferenciais */
+.diff-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+.diff { background: var(--white); padding: 28px; display: grid; gap: 8px; align-content: start; min-width: 0; }
+.diff h3 { font-family: var(--f-body); font-size: 18px; font-weight: 600; color: var(--green-800); }
+.diff p { color: var(--muted); font-size: 16px; }
+@media (max-width: 860px) { .diff-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 560px) { .diff-grid { grid-template-columns: 1fr; } }
+
+/* Como funciona: título à esquerda, cartões numerados à direita */
+.steps { background: var(--green-900); color: #fff; }
+.steps .eyebrow { color: var(--gold-soft); }
+.steps .section-head p { color: #b9cbc1; }
+.steps h2 em { font-style: italic; color: var(--gold-soft); display: block; }
+.steps-grid { display: grid; grid-template-columns: 0.85fr 1.15fr; gap: clamp(32px, 6vw, 72px); align-items: start; }
+.steps-intro { position: sticky; top: calc(88px + env(safe-area-inset-top, 0px)); }
+.steps .section-head { margin-bottom: 28px; }
+.steps .actions { display: grid; gap: 12px; justify-items: start; }
+.steps .cta-note { color: #a9bdb3; }
+.step-cards { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; }
+.step-cards li { display: grid; grid-template-columns: 52px 1fr; gap: 18px; align-items: start; background: #f6f7f4; color: var(--ink); border-radius: 10px; padding: 22px 24px; }
+.step-cards li:nth-child(odd) { background: #efe6d6; }
+.step-cards .num { width: 52px; height: 52px; border-radius: 6px; background: var(--green-700); color: #fff; display: grid; place-items: center; font-family: var(--f-display); font-size: 24px; font-variant-numeric: lining-nums; }
+.step-cards h3 { font-size: 23px; margin-bottom: 6px; color: var(--green-900); }
+.step-cards p { color: #4a5751; font-size: 16px; }
+@media (max-width: 860px) {
+  .steps-grid { grid-template-columns: 1fr; }
+  .steps-intro { position: static; display: contents; }
+  .steps .section-head { order: 0; }
+  .step-cards { order: 1; }
+  .steps .actions { order: 2; margin-top: 8px; }
+}
+@media (max-width: 420px) { .step-cards li { grid-template-columns: 1fr; gap: 12px; padding: 20px; } .step-cards .num { width: 44px; height: 44px; font-size: 21px; } }
+
+/* Depoimentos: carrossel no padrão de widget do Google */
+.carousel { position: relative; }
+.track { display: flex; gap: 20px; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; padding: 4px 2px 12px; scrollbar-width: thin; }
+.track:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; }
+.gcard { flex: 0 0 calc((100% - 40px) / 3); scroll-snap-align: start; background: var(--white); border: 1px solid var(--line); border-radius: 12px; padding: 22px; display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.gcard header { display: flex; align-items: center; gap: 12px; min-width: 0; }
+.gcard header div { min-width: 0; }
+.gcard header b { display: block; font-size: 16px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.gcard header small { color: var(--muted); font-size: 13px; }
+.avatar { width: 40px; height: 40px; border-radius: 50%; color: #fff; display: grid; place-items: center; font-weight: 600; font-size: 17px; flex: none; }
+.gcard .stars { color: #f4b400; font-size: 18px; letter-spacing: 1px; }
+.gtext { font-size: 16px; line-height: 1.55; display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; }
+.gcard.open .gtext { -webkit-line-clamp: unset; display: block; }
+.more { align-self: flex-start; background: none; border: 0; padding: 0; color: var(--muted); font: inherit; font-size: 14px; cursor: pointer; }
+.more:hover { color: var(--green-700); text-decoration: underline; }
+.more[hidden] { display: none; }
+.nav { position: absolute; top: 42%; width: 40px; height: 40px; border-radius: 50%; border: 1px solid var(--line); background: var(--white); color: var(--ink); font-size: 24px; line-height: 1; cursor: pointer; box-shadow: 0 2px 8px rgba(18,48,42,.12); z-index: 2; }
+.nav.prev { left: -20px; } .nav.next { right: -20px; }
+.nav:disabled { opacity: 0; pointer-events: none; }
+.gsummary { margin-top: 18px; text-align: center; font-size: 15px; color: var(--muted); }
+.gsummary b { color: var(--ink); }
+.gsummary a { color: var(--green-700); font-weight: 600; }
+.gsummary small { font-size: 12px; }
+@media (max-width: 900px) { .gcard { flex-basis: calc((100% - 20px) / 2); } .nav.prev { left: -8px; } .nav.next { right: -8px; } }
+@media (max-width: 560px) { .gcard { flex-basis: 86%; } .nav { display: none; } }
+
+/* Sobre */
+.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(32px, 6vw, 72px); align-items: center; }
+.about-copy { display: grid; gap: 18px; min-width: 0; }
+.about-copy h2 { font-size: clamp(30px, 4.2vw, 44px); }
+.about-copy p { color: var(--muted); }
+.about-copy .sig { color: var(--ink); font-size: 15px; padding-top: 16px; border-top: 1px solid var(--line); }
+.about-copy .sig b { display: block; font-family: var(--f-display); font-size: 20px; font-weight: 500; }
+.about-photos { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.about-photos img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 6px; }
+.about-photos figure { margin: 0; display: grid; gap: 6px; }
+.about-photos figcaption { font-size: 13px; color: var(--muted); }
+.about-address { grid-column: 1 / -1; background: var(--white); border: 1px solid var(--line); border-radius: 6px; padding: 16px 18px; font-size: 15px; }
+.about-address b { display: block; color: var(--green-800); }
+@media (max-width: 860px) { .about-grid { grid-template-columns: 1fr; } }
+
+/* FAQ */
+.faq { background: var(--white); border-top: 1px solid var(--line); }
+.faq .section-head .btn { justify-self: start; margin-top: 6px; }
+.faq-grid { display: grid; grid-template-columns: 0.8fr 1.2fr; gap: clamp(32px, 6vw, 72px); align-items: start; }
+.faq details { border-top: 1px solid var(--line); }
+.faq details:last-child { border-bottom: 1px solid var(--line); }
+.faq summary { list-style: none; cursor: pointer; padding: 20px 36px 20px 0; font-weight: 600; font-size: 17px; position: relative; }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: ""; position: absolute; right: 6px; top: 50%; width: 10px; height: 10px; border-right: 2px solid var(--green-700); border-bottom: 2px solid var(--green-700); transform: translateY(-70%) rotate(45deg); transition: transform .2s ease; }
+.faq details[open] summary::after { transform: translateY(-30%) rotate(225deg); }
+.faq details p { padding: 0 0 22px; color: var(--muted); max-width: 640px; }
+@media (max-width: 860px) { .faq-grid { grid-template-columns: 1fr; } }
+
+/* Outros serviços */
+.others-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.other { border-top: 2px solid var(--green-800); padding-top: 18px; display: grid; gap: 8px; align-content: start; min-width: 0; }
+.other h3 { font-size: 22px; }
+.other p { color: var(--muted); font-size: 16px; }
+.other a { font-weight: 600; font-size: 15px; color: var(--cta); text-decoration: none; }
+.other a:hover { text-decoration: underline; }
+@media (max-width: 760px) { .others-grid { grid-template-columns: 1fr; } }
+
+/* Fechamento */
+.closing { background: var(--green-800); color: #fff; text-align: left; }
+.closing .wrap { display: grid; grid-template-columns: 1.3fr 0.7fr; gap: 32px; align-items: center; }
+.closing h2 { font-size: clamp(30px, 4.4vw, 48px); }
+.closing p { color: #c7d6ce; margin-top: 14px; font-size: 18px; max-width: 560px; }
+.closing .actions { display: grid; gap: 10px; justify-items: start; }
+.closing .cta-note { color: #b9cbc1; }
+@media (max-width: 760px) { .closing .wrap { grid-template-columns: 1fr; } }
+
+/* Rodapé */
+.footer { background: var(--green-900); color: #b9cbc1; font-size: 14px; padding-block: 40px calc(40px + env(safe-area-inset-bottom, 0px)); }
+.footer .wrap { display: grid; grid-template-columns: 1.2fr 1fr 1fr; gap: 28px; }
+.footer-logo { display: block; height: 72px; width: auto; margin-bottom: 18px; }
+.footer b { color: #fff; font-weight: 600; display: block; margin-bottom: 6px; }
+.footer a { color: #e3ebe5; }
+.footer .legal { grid-column: 1 / -1; border-top: 1px solid rgba(255,255,255,.12); padding-top: 20px; font-size: 13px; color: #8fa79b; }
+@media (max-width: 760px) { .footer .wrap { grid-template-columns: 1fr; } }
+
+/* Barra fixa de CTA no celular */
+.mobile-bar { display: none; }
+@media (max-width: 760px) {
+  .mobile-bar { display: block; position: fixed; left: 0; right: 0; bottom: 0; z-index: 30; padding: 10px 16px calc(10px + env(safe-area-inset-bottom, 0px)); background: rgba(18, 48, 42, .96); box-shadow: 0 -6px 18px rgba(18, 48, 42, .25); }
+  .mobile-bar .btn { width: 100%; }
+  .footer { padding-bottom: calc(110px + env(safe-area-inset-bottom, 0px)); }
+}
+</style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript): inserir aqui, logo após a abertura do <body> -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-chat" viewBox="0 0 24 24"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.8"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="m7.5 12.5 3 3 6-6.5"/></symbol>
+</svg>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="#inicio" aria-label="Noemia Ingrácio Advocacia, início">
+      <img class="brand-logo" src="img/logo.png" alt="Noemia Ingrácio Advocacia" width="283" height="213">
+      <span class="brand-oab">OAB/PR 57.087</span>
+    </a>
+    <a class="btn btn-primary" data-cta="header" href="https://wa.me/554133234647?text=Ol%C3%A1%21%20Gostaria%20de%20receber%20orienta%C3%A7%C3%A3o%20sobre%20minha%20aposentadoria%20e%20entender%20quais%20possibilidades%20podem%20se%20aplicar%20ao%20meu%20caso." target="_blank" rel="noopener">
+      <svg aria-hidden="true"><use href="#i-chat"/></svg><span>Falar no WhatsApp</span>
+    </a>
+  </div>
+</header>
+
+<main id="inicio">
+  <!-- 1. Head + sub head + CTA -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Advocacia previdenciária em Curitiba <span class="sep" aria-hidden="true">|</span> Aposentadorias pelo INSS</p>
+        <h1>Sua aposentadoria merece uma <em>análise</em> antes de qualquer decisão.</h1>
+        <p class="hero-sub">Cada histórico de trabalho e contribuição é diferente. Conheça as possibilidades previdenciárias que podem se aplicar ao seu caso e receba orientação jurídica para avaliar os próximos passos.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" data-cta="hero" href="https://wa.me/554133234647?text=Ol%C3%A1%21%20Gostaria%20de%20receber%20orienta%C3%A7%C3%A3o%20sobre%20minha%20aposentadoria%20e%20entender%20quais%20possibilidades%20podem%20se%20aplicar%20ao%20meu%20caso." target="_blank" rel="noopener">
+            <svg aria-hidden="true"><use href="#i-chat"/></svg>Conversar sobre minha aposentadoria
+          </a>
+          <span class="cta-note">Atendimento pelo WhatsApp, presencial no Centro de Curitiba ou online.</span>
+        </div>
+      </div>
+      <figure class="hero-photo">
+        <picture>
+          <source type="image/webp" srcset="img/equipe-480.webp 480w, img/equipe-800.webp 800w, img/equipe-1120.webp 1120w" sizes="(max-width: 860px) calc(100vw - 32px), 430px">
+          <img src="img/equipe-800.jpg" alt="Dra. Noemia Ingrácio e a equipe do escritório" width="800" height="1000" fetchpriority="high" decoding="async">
+        </picture>
+        <figcaption>Dra. Noemia Ingrácio e equipe</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 2. Destaques com números -->
+  <section class="proof" aria-label="Destaques do escritório">
+    <div class="wrap">
+      <ul>
+        <li><strong>Desde 2006</strong><span>20 anos de atuação em Curitiba</span></li>
+        <li><strong>5,0 <span class="stars" aria-hidden="true">★★★★★</span></strong><span>Nota no Google</span></li>
+        <li><strong>875</strong><span>avaliações de clientes no Google</span></li>
+        <li><strong>INSS e Justiça</strong><span>Atuação administrativa e judicial</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 3. Serviço em destaque -->
+  <section id="tipos">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Tipos de aposentadoria</p>
+        <h2>Qual destas situações se parece com a sua?</h2>
+        <p>Você não precisa saber qual modalidade se aplica ao seu caso. Veja qual situação se parece com a sua; o enquadramento é feito pelo escritório, na análise do seu histórico.</p>
+      </div>
+      <div class="types-grid">
+        <article class="type">
+          <span class="type-tag">Aposentadoria por idade</span>
+          <h3>Já atingiu a idade para se aposentar?</h3>
+          <p>Idade, histórico de contribuição e regras aplicáveis precisam ser analisados em conjunto. Na regra geral, a idade mínima é de 62 anos para mulheres e 65 para homens, além do tempo mínimo de contribuição.</p>
+          <dl>
+            <dt>Ponto de atenção</dt>
+            <dd>Trabalhadores rurais e quem já contribuía antes da Reforma podem ter regras diferentes.</dd>
+          </dl>
+          <a class="link-cta" data-cta="tipo-idade" href="https://wa.me/554133234647?text=Ol%C3%A1%21%20Gostaria%20de%20receber%20orienta%C3%A7%C3%A3o%20sobre%20aposentadoria%20por%20idade%20e%20entender%20se%20pode%20se%20aplicar%20ao%20meu%20caso." target="_blank" rel="noopener">Conversar sobre aposentadoria por idade →</a>
+        </article>
+        <article class="type">
+          <span class="type-tag">Tempo de contribuição · regras de transição</span>
+          <h3>Você já contribuía para o INSS antes da Reforma de 2019?</h3>
+          <p>A aposentadoria apenas por tempo de contribuição deixou de existir para novos segurados. Quem já contribuía antes de 13/11/2019 pode se enquadrar em uma regra de transição ou, se completou os requisitos até essa data, ter direito adquirido às regras anteriores.</p>
+          <dl>
+            <dt>Ponto de atenção</dt>
+            <dd>Cada regra de transição tem requisitos e cálculo próprios. O enquadramento depende do histórico individual.</dd>
+          </dl>
+          <a class="link-cta" data-cta="tipo-transicao" href="https://wa.me/554133234647?text=Ol%C3%A1%21%20Gostaria%20de%20receber%20orienta%C3%A7%C3%A3o%20sobre%20regras%20de%20transi%C3%A7%C3%A3o%20da%20aposentadoria%20e%20entender%20se%20pode%20se%20aplicar%20ao%20meu%20caso." target="_blank" rel="noopener">Conversar sobre regras de transição →</a>
+        </article>
+        <article class="type">
+          <span class="type-tag">Pessoa com deficiência (PcD)</span>
+          <h3>Você trabalhou e contribuiu na condição de pessoa com deficiência?</h3>
+          <p>Existem regras específicas, com requisitos diferenciados conforme o grau da deficiência. O enquadramento depende da avaliação da condição e do período em que você trabalhou nela.</p>
+          <dl>
+            <dt>Ponto de atenção</dt>
+            <dd>A deficiência é avaliada por perícia médica e social do INSS. Laudos e documentos organizados ajudam na análise.</dd>
+          </dl>
+          <a class="link-cta" data-cta="tipo-pcd" href="https://wa.me/554133234647?text=Ol%C3%A1%21%20Gostaria%20de%20receber%20orienta%C3%A7%C3%A3o%20sobre%20aposentadoria%20da%20pessoa%20com%20defici%C3%AAncia%20%28PcD%29%20e%20entender%20se%20pode%20se%20aplicar%20ao%20meu%20caso." target="_blank" rel="noopener">Conversar sobre aposentadoria PcD →</a>
+        </article>
+        <article class="type">
+          <span class="type-tag">Aposentadoria especial</span>
+          <h3>Você trabalhou exposto a agentes prejudiciais à saúde?</h3>
+          <p>Ruído, agentes químicos ou biológicos e outras condições de trabalho podem justificar uma análise previdenciária específica. Profissionais da saúde, eletricistas e trabalhadores da indústria estão entre os casos mais comuns.</p>
+          <dl>
+            <dt>Ponto de atenção</dt>
+            <dd>A exposição precisa ser comprovada, em geral pelo PPP fornecido pela empresa.</dd>
+          </dl>
+          <a class="link-cta" data-cta="tipo-especial" href="https://wa.me/554133234647?text=Ol%C3%A1%21%20Gostaria%20de%20receber%20orienta%C3%A7%C3%A3o%20sobre%20aposentadoria%20especial%20e%20entender%20se%20pode%20se%20aplicar%20ao%20meu%20caso." target="_blank" rel="noopener">Conversar sobre aposentadoria especial →</a>
+        </article>
+      </div>
+      <div class="section-cta">
+        <a class="btn btn-primary" data-cta="tipos" href="https://wa.me/554133234647?text=Ol%C3%A1%21%20Gostaria%20de%20receber%20orienta%C3%A7%C3%A3o%20sobre%20minha%20aposentadoria%20e%20entender%20quais%20possibilidades%20podem%20se%20aplicar%20ao%20meu%20caso." target="_blank" rel="noopener">
+          <svg aria-hidden="true"><use href="#i-chat"/></svg>Conheça seu direito
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Evite erros antes de pedir -->
+  <section class="check">
+    <div class="wrap check-grid">
+      <div>
+        <div class="section-head">
+          <p class="eyebrow">Antes de dar entrada</p>
+          <h2>Evite erros ao pedir sua aposentadoria</h2>
+          <p>Antes de pedir sua aposentadoria, há decisões que merecem atenção. A regra utilizada, os períodos de contribuição reconhecidos e o momento do pedido podem influenciar o resultado da análise previdenciária. Por isso, é importante avaliar seu histórico antes de tomar uma decisão.</p>
+        </div>
+        <a class="btn btn-ghost" data-cta="checklist" href="https://wa.me/554133234647?text=Ol%C3%A1%21%20Gostaria%20de%20receber%20orienta%C3%A7%C3%A3o%20sobre%20minha%20aposentadoria%20e%20entender%20quais%20possibilidades%20podem%20se%20aplicar%20ao%20meu%20caso." target="_blank" rel="noopener">
+          <svg aria-hidden="true"><use href="#i-chat"/></svg>Tire suas dúvidas agora mesmo
+        </a>
+      </div>
+      <ul class="check-list">
+        <li><svg aria-hidden="true"><use href="#i-check"/></svg><div><h3>Qual regra se aplica ao seu caso</h3><p>Idade, tempo de contribuição e histórico previdenciário podem abrir mais de uma possibilidade.</p></div></li>
+        <li><svg aria-hidden="true"><use href="#i-check"/></svg><div><h3>Qual é o melhor momento para pedir</h3><p>Ter direito a se aposentar não significa, necessariamente, que aquele seja o momento mais adequado para o pedido.</p></div></li>
+        <li><svg aria-hidden="true"><use href="#i-check"/></svg><div><h3>Qual pode ser o valor do benefício</h3><p>Contribuições, salários e períodos reconhecidos interferem diretamente no cálculo.</p></div></li>
+        <li><svg aria-hidden="true"><use href="#i-check"/></svg><div><h3>Se todo o seu histórico está correto</h3><p>Erros no CNIS, vínculos ausentes ou períodos não reconhecidos podem prejudicar o pedido.</p><p class="cnis">O CNIS é o extrato do INSS com seus vínculos e contribuições. É comum faltarem empregos antigos, períodos rurais, tempo de serviço militar ou atividades especiais.</p></div></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 4. Diferenciais -->
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Diferenciais</p>
+        <h2>Por que contar com a Noemia Ingrácio Advocacia?</h2>
+      </div>
+      <div class="diff-grid">
+        <div class="diff"><h3>20 anos de atuação</h3><p>Duas décadas dedicadas a aposentadorias e outros direitos previdenciários, desde 2006 em Curitiba.</p></div>
+        <div class="diff"><h3>Equipe dedicada ao Direito Previdenciário</h3><p>Advogados com atuação específica na área e atualização constante sobre as regras do INSS.</p></div>
+        <div class="diff"><h3>Análise individualizada</h3><p>Cada histórico contributivo é diferente. Seu caso é estudado de acordo com as suas particularidades.</p></div>
+        <div class="diff"><h3>Segurança antes da decisão</h3><p>Regras, documentos e possibilidades são analisados antes de definir o caminho do pedido.</p></div>
+        <div class="diff"><h3>Atuação completa</h3><p>Da análise inicial e organização dos documentos ao acompanhamento no INSS ou na Justiça, quando necessário.</p></div>
+        <div class="diff"><h3>Atendimento próximo</h3><p>Explicações claras em cada etapa, para você entender o andamento e as decisões do seu caso.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Como funciona -->
+  <section class="steps">
+    <div class="wrap">
+      <div class="steps-grid">
+      <div class="steps-intro">
+      <div class="section-head">
+        <p class="eyebrow">Como funciona</p>
+        <h2>Do primeiro contato ao pedido no INSS. <em>Estamos com você.</em></h2>
+        <p>Tudo começa com uma conversa pelo WhatsApp.</p>
+      </div>
+      <div class="actions">
+        <a class="btn btn-primary" data-cta="como-funciona" href="https://wa.me/554133234647?text=Ol%C3%A1%21%20Gostaria%20de%20receber%20orienta%C3%A7%C3%A3o%20sobre%20minha%20aposentadoria%20e%20entender%20quais%20possibilidades%20podem%20se%20aplicar%20ao%20meu%20caso." target="_blank" rel="noopener">
+          <svg aria-hidden="true"><use href="#i-chat"/></svg>Conversar sobre minha aposentadoria
+        </a>
+        <span class="cta-note">Não precisa ter todos os documentos para começar.</span>
+      </div>
+      </div>
+      <ol class="step-cards">
+        <li><span class="num" aria-hidden="true">01</span><div><h3>Você conta sua história</h3><p>Pelo WhatsApp, no seu tempo. A equipe ouve sua situação, entende o que você busca e combina o atendimento, presencial ou online.</p></div></li>
+        <li><span class="num" aria-hidden="true">02</span><div><h3>Nós estudamos seu caso</h3><p>Analisamos seu CNIS, suas contribuições e seus documentos, e verificamos quais regras de aposentadoria podem valer para você.</p></div></li>
+        <li><span class="num" aria-hidden="true">03</span><div><h3>Explicamos seus caminhos</h3><p>Mostramos as possibilidades encontradas, no INSS ou na Justiça, com clareza, para você decidir com tranquilidade.</p></div></li>
+        <li><span class="num" aria-hidden="true">04</span><div><h3>Seguimos juntos no INSS</h3><p>Se você decidir seguir, cuidamos do pedido, das exigências, das perícias e dos recursos, e mantemos você informado a cada etapa.</p></div></li>
+      </ol>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- 8. Depoimentos (antecipado: prova social logo após o passo a passo) -->
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Avaliações no Google</p>
+        <h2>O que dizem os clientes sobre o atendimento</h2>
+      </div>
+      <div class="carousel">
+        <button type="button" class="nav prev" aria-label="Avaliações anteriores">‹</button>
+        <div class="track" tabindex="0" aria-label="Avaliações de clientes">
+          <article class="gcard">
+            <header><span class="avatar" style="background:#8a5a9e" aria-hidden="true">M</span><div><b>Márcia Kovalski Bergonse</b><small>Avaliação no Google</small></div></header>
+            <span class="stars" aria-label="5 de 5 estrelas">★★★★★</span>
+            <p class="gtext" id="rv0">Escritório altamente qualificado sobre as questões previdenciárias. A advogada Noemia sempre conduziu com muita expertise as minhas dúvidas e ações. Super recomendo!</p>
+            <button type="button" class="more" aria-expanded="false" aria-controls="rv0">Leia mais</button>
+          </article>
+          <article class="gcard">
+            <header><span class="avatar" style="background:#1a73c8" aria-hidden="true">E</span><div><b>Edson Americo</b><small>Avaliação no Google</small></div></header>
+            <span class="stars" aria-label="5 de 5 estrelas">★★★★★</span>
+            <p class="gtext" id="rv1">Me indicaram o escritório, fui atendido pela Dra. Daniele, que explicou muito bem. Indico o escritório pelo profissionalismo e atendimento (recepção: Dirlene, atenciosa, objetiva e paciente).</p>
+            <button type="button" class="more" aria-expanded="false" aria-controls="rv1">Leia mais</button>
+          </article>
+          <article class="gcard">
+            <header><span class="avatar" style="background:#5f7d8c" aria-hidden="true">R</span><div><b>Rosa Souto</b><small>Avaliação no Google</small></div></header>
+            <span class="stars" aria-label="5 de 5 estrelas">★★★★★</span>
+            <p class="gtext" id="rv2">Estou sendo muito bem atendida. Minha mãe teve a questão dela resolvida. Dra. Noemia e equipe estão de parabéns. Indico.</p>
+            <button type="button" class="more" aria-expanded="false" aria-controls="rv2">Leia mais</button>
+          </article>
+          <article class="gcard">
+            <header><span class="avatar" style="background:#c0492b" aria-hidden="true">A</span><div><b>Armerinda Aparecida Ribas de Morais</b><small>Avaliação no Google</small></div></header>
+            <span class="stars" aria-label="5 de 5 estrelas">★★★★★</span>
+            <p class="gtext" id="rv3">Finalizou meu processo, fiquei satisfeita com o resultado. A equipe é muito prestativa, desde a recepção até os advogados, atenciosos. Recomendo o escritório para quem procura serviço previdenciário.</p>
+            <button type="button" class="more" aria-expanded="false" aria-controls="rv3">Leia mais</button>
+          </article>
+          <article class="gcard">
+            <header><span class="avatar" style="background:#0b8043" aria-hidden="true">V</span><div><b>Viviane Gonçalves Grazino</b><small>Avaliação no Google</small></div></header>
+            <span class="stars" aria-label="5 de 5 estrelas">★★★★★</span>
+            <p class="gtext" id="rv4">Fui tão bem acolhida! Atendimento da Dirlene é ótimo, ela é ágil em cadastrar documentos! Dra. Noemia é bem clara e objetiva. Sem contar que o escritório é impecável! Um ambiente moderno, sofisticado e que une a sobriedade do direito com o conforto que o cliente precisa. Eu compareci em julho/26.</p>
+            <button type="button" class="more" aria-expanded="false" aria-controls="rv4">Leia mais</button>
+          </article>
+        </div>
+        <button type="button" class="nav next" aria-label="Próximas avaliações">›</button>
+      </div>
+      <p class="gsummary">Avaliação geral no Google <b>5,0 de 5</b>, com base em <b>875 avaliações</b>. <a href="https://www.google.com/search?q=Noemia+Ingr%C3%A1cio+Advocacia+Curitiba" target="_blank" rel="noopener">Ver todas no Google</a><br><small>Dados consultados em 13/10/2026.</small></p>
+    </div>
+  </section>
+
+  <!-- 7. Sobre nós -->
+  <section style="background: var(--green-100);">
+    <div class="wrap about-grid">
+      <div class="about-copy">
+        <p class="eyebrow">Sobre o escritório</p>
+        <h2>Um escritório dedicado aos seus direitos previdenciários</h2>
+        <p>A Noemia Ingrácio Advocacia foi fundada em Curitiba em 2006 e construiu sua atuação com foco em Direito Previdenciário.</p>
+        <p>Ao longo dessa trajetória, o escritório reuniu uma equipe para atender trabalhadores, aposentados, pensionistas e servidores nas mais diferentes demandas previdenciárias, unindo conhecimento técnico, análise individualizada e acompanhamento próximo.</p>
+        <p class="sig"><b>Dra. Noemia Ingrácio</b>Fundadora e diretora · OAB/PR 57.087<br>Pós-graduada em Direito Previdenciário, Processo Civil e Direito Civil.</p>
+      </div>
+      <div class="about-photos">
+        <figure><picture><source type="image/webp" srcset="img/escritorio-recepcao-400.webp 400w, img/escritorio-recepcao-800.webp 800w" sizes="(max-width: 860px) calc(50vw - 23px), 240px"><img src="img/escritorio-recepcao-800.jpg" alt="Recepção do escritório" width="800" height="565" loading="lazy" decoding="async"></picture><figcaption>Recepção</figcaption></figure>
+        <figure><picture><source type="image/webp" srcset="img/escritorio-sala-400.webp 400w, img/escritorio-sala-800.webp 800w" sizes="(max-width: 860px) calc(50vw - 23px), 240px"><img src="img/escritorio-sala-800.jpg" alt="Sala de trabalho da equipe" width="800" height="565" loading="lazy" decoding="async"></picture><figcaption>Sala da equipe</figcaption></figure>
+        <div class="about-address"><b>Edifício Minas Gerais, sala 303</b>Rua XV de Novembro, 270, Centro, Curitiba/PR</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ (novo: objeções de quem chega pela busca) -->
+  <section class="faq">
+    <div class="wrap faq-grid">
+      <div class="section-head">
+        <p class="eyebrow">Dúvidas frequentes</p>
+        <h2>Perguntas antes de começar</h2>
+        <p>Se a sua dúvida não estiver aqui, a equipe responde pelo WhatsApp.</p>
+        <a class="btn btn-ghost" data-cta="faq" href="https://wa.me/554133234647?text=Ol%C3%A1%21%20Gostaria%20de%20receber%20orienta%C3%A7%C3%A3o%20sobre%20minha%20aposentadoria%20e%20entender%20quais%20possibilidades%20podem%20se%20aplicar%20ao%20meu%20caso." target="_blank" rel="noopener">
+          <svg aria-hidden="true"><use href="#i-chat"/></svg>Mais perguntas? Fale agora com um advogado
+        </a>
+      </div>
+      <div>
+        <details><summary>Preciso ir até o escritório?</summary><p>Não necessariamente. O atendimento pode ser presencial, no Centro de Curitiba, ou online, para quem mora em Curitiba e na região metropolitana.</p></details>
+        <details><summary>Quais documentos devo separar?</summary><p>Documento de identidade, CPF, carteiras de trabalho, carnês de contribuição e o extrato do CNIS, que pode ser emitido pelo Meu INSS. Para aposentadoria especial, o PPP das empresas; para PcD, laudos médicos. Se faltar algum documento, a equipe orienta como obtê-lo.</p></details>
+        <details><summary>Já tenho idade para me aposentar. Ainda vale fazer a análise?</summary><p>Sim. Dependendo do histórico previdenciário, podem existir diferentes regras aplicáveis, com requisitos e formas de cálculo distintos. A análise permite avaliar essas possibilidades antes do pedido, considerando que a revisão de uma aposentadoria já concedida está sujeita a condições e limitações legais.</p></details>
+        <details><summary>Meu pedido foi negado pelo INSS. E agora?</summary><p>Um pedido negado pode ser revisto por recurso administrativo ou por ação judicial, dependendo do motivo da negativa e das circunstâncias do caso. O primeiro passo é entender por que o INSS negou o benefício.</p></details>
+        <details><summary>Completei os requisitos antes da Reforma de 2019. Isso muda alguma coisa?</summary><p>Pode mudar. Quem completou todos os requisitos de determinada aposentadoria antes da entrada em vigor da Reforma da Previdência, em 13/11/2019, pode ter direito adquirido às regras anteriores, mesmo que apresente o pedido posteriormente. É necessário verificar o histórico individual.</p></details>
+        <details><summary>Como funcionam os honorários?</summary><p>Os honorários são explicados com transparência no atendimento, de acordo com o tipo de caso e o trabalho envolvido, antes de qualquer contratação.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Outros serviços -->
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Outros serviços</p>
+        <h2>Atuamos também com outros benefícios</h2>
+      </div>
+      <div class="others-grid">
+        <div class="other"><h3>Auxílio por Incapacidade Temporária</h3><p>O antigo auxílio-doença. Orientação para quem está temporariamente impossibilitado de trabalhar por motivo de saúde.</p><a data-cta="outros-auxilio" href="https://wa.me/554133234647?text=Ol%C3%A1!%20Quero%20conversar%20sobre%20aux%C3%ADlio%20por%20incapacidade%20tempor%C3%A1ria." target="_blank" rel="noopener">Saber mais →</a></div>
+        <div class="other"><h3>Aposentadoria de servidores públicos</h3><p>Regime Próprio de Previdência, para servidores concursados e seus beneficiários.</p><a data-cta="outros-rpps" href="https://wa.me/554133234647?text=Ol%C3%A1!%20Sou%20servidor%20p%C3%BAblico%20e%20quero%20conversar%20sobre%20aposentadoria." target="_blank" rel="noopener">Saber mais →</a></div>
+        <div class="other"><h3>Previdência militar</h3><p>Orientação sobre os direitos previdenciários de militares e seus dependentes.</p><a data-cta="outros-militar" href="https://wa.me/554133234647?text=Ol%C3%A1!%20Quero%20conversar%20sobre%20previd%C3%AAncia%20militar." target="_blank" rel="noopener">Saber mais →</a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. Fechamento -->
+  <section class="closing">
+    <div class="wrap">
+      <div>
+        <h2>Antes de pedir sua aposentadoria, conheça todas as possibilidades.</h2>
+        <p>Converse com a equipe e entenda qual regra pode ser a mais adequada ao seu histórico.</p>
+      </div>
+      <div class="actions">
+        <a class="btn btn-primary" data-cta="fechamento" href="https://wa.me/554133234647?text=Ol%C3%A1%21%20Gostaria%20de%20receber%20orienta%C3%A7%C3%A3o%20sobre%20minha%20aposentadoria%20e%20entender%20quais%20possibilidades%20podem%20se%20aplicar%20ao%20meu%20caso." target="_blank" rel="noopener">
+          <svg aria-hidden="true"><use href="#i-chat"/></svg>Conversar sobre minha aposentadoria
+        </a>
+        <span class="cta-note">WhatsApp (41) 3323-4647</span>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div><img class="footer-logo" src="img/logo.png" alt="" width="283" height="213"><b>Noemia Ingrácio Advocacia</b>Atuação dedicada ao Direito Previdenciário desde 2006.<br>Dra. Noemia Ingracio de Silva · OAB/PR 57.087</div>
+    <div><b>Endereço</b>Rua XV de Novembro, 270, sala 303<br>Edifício Minas Gerais, Centro<br>Curitiba/PR · CEP 80020-310</div>
+    <div><b>Contato</b>WhatsApp e telefone: (41) 3323-4647<br>contato@noemiaingracio.adv.br<br><a href="https://noemiaingracio.adv.br/" target="_blank" rel="noopener">noemiaingracio.adv.br</a></div>
+    <p class="legal">Conteúdo de caráter informativo, conforme o Código de Ética e Disciplina da OAB e o Provimento 205/2021. A análise de cada caso depende da documentação e das regras aplicáveis. <a href="https://noemiaingracio.adv.br/politica-de-privacidade-2/" target="_blank" rel="noopener">Política de Privacidade</a></p>
+  </div>
+</footer>
+
+<div class="mobile-bar">
+  <a class="btn btn-primary" data-cta="barra-mobile" href="https://wa.me/554133234647?text=Ol%C3%A1%21%20Gostaria%20de%20receber%20orienta%C3%A7%C3%A3o%20sobre%20minha%20aposentadoria%20e%20entender%20quais%20possibilidades%20podem%20se%20aplicar%20ao%20meu%20caso." target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-chat"/></svg>Conversar sobre minha aposentadoria</a>
+</div>
+
+<script>
+// Rastreamento de cliques nos CTAs (Google Ads / GTM): cada botão envia o evento "clique_whatsapp" com a posição na página.
+document.addEventListener('click', function (e) {
+  var a = e.target.closest && e.target.closest('[data-cta]');
+  if (!a) return;
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({ event: 'clique_whatsapp', cta_posicao: a.getAttribute('data-cta'), lp: 'aposentadoria' });
+});
+
+// Cabeçalho: logo grande no topo, compacto após rolar
+(function () {
+  var bar = document.querySelector('.topbar');
+  if (!bar) return;
+  var ticking = false;
+  function update() { bar.classList.toggle('is-scrolled', window.scrollY > 24); ticking = false; }
+  window.addEventListener('scroll', function () { if (!ticking) { ticking = true; requestAnimationFrame(update); } }, { passive: true });
+  update();
+})();
+
+// Carrossel de avaliações: setas e "Leia mais"
+(function () {
+  var track = document.querySelector('.track');
+  if (!track) return;
+  var prev = document.querySelector('.nav.prev'), next = document.querySelector('.nav.next');
+  function step() { var c = track.querySelector('.gcard'); return c ? c.getBoundingClientRect().width + 20 : 300; }
+  function update() {
+    prev.disabled = track.scrollLeft < 4;
+    next.disabled = track.scrollLeft + track.clientWidth >= track.scrollWidth - 4;
+  }
+  prev.addEventListener('click', function () { track.scrollBy({ left: -step() }); });
+  next.addEventListener('click', function () { track.scrollBy({ left: step() }); });
+  track.addEventListener('scroll', update, { passive: true });
+  window.addEventListener('resize', update);
+  update();
+  document.querySelectorAll('.gcard').forEach(function (card) {
+    var t = card.querySelector('.gtext'), b = card.querySelector('.more');
+    if (t.scrollHeight <= t.clientHeight + 2) b.hidden = true;
+    b.addEventListener('click', function () {
+      var open = card.classList.toggle('open');
+      b.textContent = open ? 'Mostrar menos' : 'Leia mais';
+      b.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  });
+})();
+</script>
+</body>
+</html>
