@@ -523,12 +523,12 @@ section { padding-block: clamp(56px, 8vw, 96px); }
         </a>
       </div>
       <div>
-        <details><summary>Preciso ir até o escritório?</summary><p>Não necessariamente. O atendimento pode ser presencial, no Centro de Curitiba, ou online, para quem mora em Curitiba e na região metropolitana.</p></details>
-        <details><summary>Quais documentos devo separar?</summary><p>Documento de identidade, CPF, carteiras de trabalho, carnês de contribuição e o extrato do CNIS, que pode ser emitido pelo Meu INSS. Para aposentadoria especial, o PPP das empresas; para PcD, laudos médicos. Se faltar algum documento, a equipe orienta como obtê-lo.</p></details>
-        <details><summary>Já tenho idade para me aposentar. Ainda vale fazer a análise?</summary><p>Sim. Dependendo do histórico previdenciário, podem existir diferentes regras aplicáveis, com requisitos e formas de cálculo distintos. A análise permite avaliar essas possibilidades antes do pedido, considerando que a revisão de uma aposentadoria já concedida está sujeita a condições e limitações legais.</p></details>
-        <details><summary>Meu pedido foi negado pelo INSS. E agora?</summary><p>Um pedido negado pode ser revisto por recurso administrativo ou por ação judicial, dependendo do motivo da negativa e das circunstâncias do caso. O primeiro passo é entender por que o INSS negou o benefício.</p></details>
-        <details><summary>Completei os requisitos antes da Reforma de 2019. Isso muda alguma coisa?</summary><p>Pode mudar. Quem completou todos os requisitos de determinada aposentadoria antes da entrada em vigor da Reforma da Previdência, em 13/11/2019, pode ter direito adquirido às regras anteriores, mesmo que apresente o pedido posteriormente. É necessário verificar o histórico individual.</p></details>
-        <details><summary>Como funcionam os honorários?</summary><p>Os honorários são explicados com transparência no atendimento, de acordo com o tipo de caso e o trabalho envolvido, antes de qualquer contratação.</p></details>
+        <details name="faq"><summary>Preciso ir até o escritório?</summary><p>Não necessariamente. O atendimento pode ser presencial, no Centro de Curitiba, ou online, para quem mora em Curitiba e na região metropolitana.</p></details>
+        <details name="faq"><summary>Quais documentos devo separar?</summary><p>Documento de identidade, CPF, carteiras de trabalho, carnês de contribuição e o extrato do CNIS, que pode ser emitido pelo Meu INSS. Para aposentadoria especial, o PPP das empresas; para PcD, laudos médicos. Se faltar algum documento, a equipe orienta como obtê-lo.</p></details>
+        <details name="faq"><summary>Já tenho idade para me aposentar. Ainda vale fazer a análise?</summary><p>Sim. Dependendo do histórico previdenciário, podem existir diferentes regras aplicáveis, com requisitos e formas de cálculo distintos. A análise permite avaliar essas possibilidades antes do pedido, considerando que a revisão de uma aposentadoria já concedida está sujeita a condições e limitações legais.</p></details>
+        <details name="faq"><summary>Meu pedido foi negado pelo INSS. E agora?</summary><p>Um pedido negado pode ser revisto por recurso administrativo ou por ação judicial, dependendo do motivo da negativa e das circunstâncias do caso. O primeiro passo é entender por que o INSS negou o benefício.</p></details>
+        <details name="faq"><summary>Completei os requisitos antes da Reforma de 2019. Isso muda alguma coisa?</summary><p>Pode mudar. Quem completou todos os requisitos de determinada aposentadoria antes da entrada em vigor da Reforma da Previdência, em 13/11/2019, pode ter direito adquirido às regras anteriores, mesmo que apresente o pedido posteriormente. É necessário verificar o histórico individual.</p></details>
+        <details name="faq"><summary>Como funcionam os honorários?</summary><p>Os honorários são explicados com transparência no atendimento, de acordo com o tipo de caso e o trabalho envolvido, antes de qualquer contratação.</p></details>
       </div>
     </div>
   </section>
@@ -619,6 +619,159 @@ document.addEventListener('click', function (e) {
       var open = card.classList.toggle('open');
       b.textContent = open ? 'Mostrar menos' : 'Leia mais';
       b.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  });
+})();
+</script>
+<!--
+  CAMADA DE MOVIMENTO — LPs Noemia Ingrácio (LP01 e LP02)
+  COMO APLICAR (nas duas LPs):
+  1. Colar este bloco inteiro logo antes de </body>.
+  2. No FAQ, trocar cada <details> por <details name="faq"> (6 na LP01, 10 na LP02),
+     para que só uma resposta fique aberta por vez, mesmo sem JavaScript.
+  Não altera copy, cores, layout nem componentes.
+  - Para revisar as animações num aparelho com "reduzir movimento" ativo, abrir o link com #movimento no final.
+  - Sem bibliotecas: CSS + Intersection Observer (~3 KB).
+  - Sem JavaScript, ou com "reduzir movimento" ativo no aparelho, a página aparece normal e estática.
+  - Ao imprimir/salvar em PDF, todo o conteúdo é exibido.
+  - Se alguma classe tiver sido renomeada no design final, ajustar a lista REVEAL no script.
+-->
+<style id="lp-motion">
+/* Botões: microinteração (vale também com reduzir movimento, pois é só cor/sombra) */
+.btn { transition: background-color .25s ease, color .25s ease, border-color .25s ease, box-shadow .3s ease, transform .3s cubic-bezier(.2,.7,.2,1); }
+.btn-primary:hover { box-shadow: 0 8px 22px rgba(31,122,77,.28); }
+.btn svg { transition: transform .3s cubic-bezier(.2,.7,.2,1); }
+.link-cta, .other a { transition: color .2s ease, gap .3s ease; }
+
+@media (prefers-reduced-motion: no-preference) {
+  /* Hero: entrada sequencial (só quando o JS confirmou que está tudo pronto) */
+  @keyframes lpFadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: none; } }
+  @keyframes lpFadeIn { from { opacity: 0; transform: scale(.985); } to { opacity: 1; transform: none; } }
+  .m-ready .hero .eyebrow     { animation: lpFadeUp .5s cubic-bezier(.2,.7,.2,1) both; }
+  .m-ready .hero h1           { animation: lpFadeUp .6s cubic-bezier(.2,.7,.2,1) .08s both; }
+  .m-ready .hero .hero-sub    { animation: lpFadeUp .6s cubic-bezier(.2,.7,.2,1) .18s both; }
+  .m-ready .hero .hero-actions{ animation: lpFadeUp .6s cubic-bezier(.2,.7,.2,1) .28s both; }
+  .m-ready .hero .hero-photo  { animation: lpFadeIn .7s ease .15s both; }
+
+  /* Revelação ao rolar */
+  .m-ready .rv { opacity: 0; transform: translateY(24px); transition: opacity .55s ease, transform .6s cubic-bezier(.2,.7,.2,1); transition-delay: var(--rv-d, 0ms); }
+  .m-ready .rv.in { opacity: 1; transform: none; }
+
+  /* Cartões: leve elevação no hover (apenas em mouse) */
+  @media (hover: hover) {
+    .type, .gcard, .step-cards li, .other { transition: transform .35s cubic-bezier(.2,.7,.2,1), box-shadow .35s ease, border-color .35s ease, opacity .55s ease; }
+    .type:hover, .gcard:hover { transform: translateY(-3px); box-shadow: 0 12px 28px rgba(18,48,42,.10); border-color: #c5d1c9; }
+    .step-cards li:hover { transform: translateX(4px); }
+    .btn:hover { transform: translateY(-1px); }
+    .btn:hover svg { transform: translateX(2px); }
+    .link-cta:hover, .other a:hover { gap: 10px; }
+  }
+
+  /* FAQ: seta gira suave (abertura animada pelo script) */
+  .faq summary::after { transition: transform .3s cubic-bezier(.2,.7,.2,1); }
+  .faq summary { transition: color .2s ease; }
+  .faq summary:hover { color: var(--green-700, #24543f); }
+
+  /* Barra fixa do celular */
+  .mobile-bar { transition: transform .35s cubic-bezier(.2,.7,.2,1); }
+}
+
+
+/* Revisão forçada (#movimento): mesmas animações mesmo com "reduzir movimento" ativo */
+.m-force.m-ready .hero .eyebrow     { animation: lpFadeUp2 .5s cubic-bezier(.2,.7,.2,1) both; }
+.m-force.m-ready .hero h1           { animation: lpFadeUp2 .6s cubic-bezier(.2,.7,.2,1) .08s both; }
+.m-force.m-ready .hero .hero-sub    { animation: lpFadeUp2 .6s cubic-bezier(.2,.7,.2,1) .18s both; }
+.m-force.m-ready .hero .hero-actions{ animation: lpFadeUp2 .6s cubic-bezier(.2,.7,.2,1) .28s both; }
+.m-force.m-ready .hero .hero-photo  { animation: lpFadeUp2 .7s ease .15s both; }
+.m-force.m-ready .rv { opacity: 0; transform: translateY(24px); transition: opacity .55s ease, transform .6s cubic-bezier(.2,.7,.2,1); transition-delay: var(--rv-d, 0ms); }
+.m-force.m-ready .rv.in { opacity: 1; transform: none; }
+@keyframes lpFadeUp2 { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: none; } }
+
+@media print { .m-ready .rv, .m-ready .hero * { opacity: 1 !important; transform: none !important; animation: none !important; } }
+</style>
+<script id="lp-motion-js">
+(function () {
+  // #movimento no fim do link força as animações (para revisão em aparelhos com "reduzir movimento" ativo)
+  var force = location.hash === '#movimento';
+  if (force) document.documentElement.classList.add('m-force');
+  var reduce = !force && window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduce || !('IntersectionObserver' in window)) return; // página segue estática e 100% visível
+
+  // Elementos revelados ao rolar (grupos irmãos entram escalonados)
+  var REVEAL = [
+    '.proof li', '.section-head', '.types-grid > *', '.section-cta',
+    '.check-list li', '.check .btn', '.req-close',
+    '.diff', '.diff-intro', '.analysis-list li',
+    '.steps .actions', '.step-cards li',
+    '.carousel', '.gsummary',
+    '.about-copy', '.about-photos figure', '.about-address',
+    '.faq details', '.faq-cta', '.faq .section-head .btn',
+    '.other', '.closing .wrap > *'
+  ].join(',');
+
+  var els = Array.prototype.slice.call(document.querySelectorAll(REVEAL));
+  els.forEach(function (el) {
+    if (el.closest('.hero')) return;
+    el.classList.add('rv');
+    // escalonamento: posição entre irmãos que também animam (máx. 4 passos de 80 ms)
+    var sibs = Array.prototype.filter.call(el.parentElement.children, function (c) { return c.matches(REVEAL); });
+    var i = sibs.indexOf(el);
+    if (i > 0) el.style.setProperty('--rv-d', (Math.min(i, 4) * 80) + 'ms');
+  });
+
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (en) {
+      if (en.isIntersecting) {
+        var t = en.target; t.classList.add('in'); io.unobserve(t);
+        // depois de revelado, devolve o elemento às transições normais (hover sem atraso)
+        var d = parseInt(t.style.getPropertyValue('--rv-d')) || 0;
+        setTimeout(function () { t.classList.remove('rv', 'in'); t.style.removeProperty('--rv-d'); }, 700 + d);
+      }
+    });
+  }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+  els.forEach(function (el) { if (el.classList.contains('rv')) io.observe(el); });
+
+  document.documentElement.classList.add('m-ready');
+
+  // Segurança: imprimir/salvar PDF mostra tudo
+  window.addEventListener('beforeprint', function () { els.forEach(function (el) { el.classList.add('in'); }); });
+
+  // FAQ: uma resposta aberta por vez, com abertura e fechamento fluidos
+  var faqs = Array.prototype.slice.call(document.querySelectorAll('.faq details'));
+  function closeFaq(d) {
+    var body = d.querySelector('summary + *');
+    if (!d.open) return;
+    if (!body || !body.animate) { d.open = false; return; }
+    if (d._anim) d._anim.cancel();
+    var h = body.scrollHeight;
+    d._anim = body.animate([{ height: h + 'px', opacity: 1 }, { height: '0px', opacity: 0 }], { duration: 260, easing: 'ease' });
+    d._anim.onfinish = function () { d.open = false; d._anim = null; };
+  }
+  function openFaq(d) {
+    var body = d.querySelector('summary + *');
+    d.open = true;
+    if (!body || !body.animate) return;
+    if (d._anim) d._anim.cancel();
+    var h = body.scrollHeight;
+    d._anim = body.animate([{ height: '0px', opacity: 0 }, { height: h + 'px', opacity: 1 }], { duration: 320, easing: 'cubic-bezier(.2,.7,.2,1)' });
+    d._anim.onfinish = function () {
+      d._anim = null;
+      // se a pergunta subiu para baixo do cabeçalho (resposta anterior fechou), traz de volta à vista
+      var top = d.getBoundingClientRect().top;
+      if (top < 80) window.scrollBy({ top: top - 90, behavior: 'smooth' });
+    };
+  }
+  // o script controla a exclusividade com animação; o atributo name fica só para quando não há JS
+  faqs.forEach(function (d) { d.removeAttribute('name'); });
+  faqs.forEach(function (d) {
+    var s = d.querySelector('summary'), body = d.querySelector('summary + *');
+    if (!s || !body) return;
+    body.style.overflow = 'hidden';
+    s.addEventListener('click', function (e) {
+      e.preventDefault();
+      if (d.open) { closeFaq(d); return; }
+      faqs.forEach(function (o) { if (o !== d) closeFaq(o); });
+      openFaq(d);
     });
   });
 })();
