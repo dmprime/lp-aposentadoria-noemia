@@ -6,7 +6,9 @@
     "directory": "./"
   },
   // Domínio próprio (zona noemiaingracio.adv.br na Cloudflare). Endereços *.workers.dev desativados.
+  // aposentadoria.* é o endereço oficial; lp-aposentadoria.* fica ligado só para redirecionar links antigos (regra na Cloudflare).
   "routes": [
+    { "pattern": "aposentadoria.noemiaingracio.adv.br", "custom_domain": true },
     { "pattern": "lp-aposentadoria.noemiaingracio.adv.br", "custom_domain": true }
   ],
   "workers_dev": false,
